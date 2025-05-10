@@ -7,6 +7,7 @@ function PopularCity() {
             <h2>Popular city</h2>
             {weatherData.map(item => (
                 <CardWithInfo key={item.id} city={item.city} country={item.country} />
+                
             ))}
         </div>)
 }
