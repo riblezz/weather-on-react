@@ -1,7 +1,7 @@
 const WEATHER_API = "http://api.weatherapi.com/v1/forecast.json?days=5&key=927baf2d296442549b3122200250304&q="
 
 function fetchTemperature(city) {
-    fetch(WEATHER_API + city)
+    return fetch(WEATHER_API + city)
     .then(response => response.json())
     .then(data => {
         return {
